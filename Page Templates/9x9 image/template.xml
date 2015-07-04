@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+	<template category="Coffee Table Books">
+		<name>9x9 image</name>
+		<file>Document-1</file>
+		<tnail>9x9 imagetn.png</tnail>
+		<img>9x9 image.png</img>
+		<psize>custom, 684x579</psize>
+		<color></color>
+		<descr>9x9 Image layout for Blurb standard landscape book</descr>
+		<usage>CC BY-SA 4.0</usage>
+		<scribus_version>1.4.5</scribus_version>
+		<date>2015-07-04</date>
+		<author>Mike Hingley</author>
+		<email>mike@titaniumbunker.com</email>
+	</template>
+</templates>

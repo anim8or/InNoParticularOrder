@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+	<template category="Coffee Table Book">
+		<name>4x4 image</name>
+		<file>Document-1.sla</file>
+		<tnail>4x4 imagetn.png</tnail>
+		<img>4x4 image.png</img>
+		<psize>custom, 684x579</psize>
+		<color></color>
+		<descr>A 4x4 image layout for a standard Landscape Coffee Table Book, through Blurb</descr>
+		<usage>CC BY-SA 4.0</usage>
+		<scribus_version>1.4.5</scribus_version>
+		<date>2015-07-04</date>
+		<author>Mike Hingley</author>
+		<email>mike@titaniumbunker.com</email>
+	</template>
+</templates>
