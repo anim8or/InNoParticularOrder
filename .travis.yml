@@ -1,11 +1,9 @@
 dist: trusty
 sudo: required
 
-language: python
-
-python:
- - "2.7"
-# uncomment and edit the following line if your project needs to run something other than `rake`:
+language: ruby
+rvm:  
+    - 2.1
 
 before_install:
   - sudo apt-get -qq update
@@ -19,18 +17,5 @@ install: true
 script:
    - python -V
  
-#script:
-#   - sonar-scanner
-#   - sudo dpkg-buildpackage -us -uc 
-
-#before_deploy:
-#  cp ../python-selfietorium_1_all.deb python-selfietorium_1_all.deb
 
 deploy: true
-#  provider: releases
-#  api_key: '$GITHUB_API_KEY'
-#  file: 'python-selfietorium_1_all.deb'
-#  skip_cleanup: true
-#  on:
-#    branch: master
-#    tags: true
