@@ -1,10 +1,12 @@
 sudo: required
 dist: trusty
 before_install:
+- sudo add-apt-repository ppa:scribus/ppa
+- sudo apt upgrade
 - sudo apt-get -qq update 
 - sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
 - sudo apt-get install -y xvfb
-- sudo apt-get install -y scribus
+- sudo apt-get install -y scribus-ng
 script:
 - mkdir _build
 - ls
