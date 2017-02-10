@@ -1,7 +1,6 @@
 dist: trusty
 sudo: required
 
-
 language: python
 
 python:
@@ -16,12 +15,14 @@ before_install:
   #- sudo apt-get install -y python-cairo python-lxml python-rsvg python-twitter
   
 install: true
+
+script: true
  
-script:
+#script:
 #   - sonar-scanner
 #   - sudo dpkg-buildpackage -us -uc 
 
-before_deploy:
+#before_deploy:
 #  cp ../python-selfietorium_1_all.deb python-selfietorium_1_all.deb
 
 deploy: true
