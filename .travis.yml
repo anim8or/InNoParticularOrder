@@ -9,14 +9,15 @@ python:
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install scribus
+  - sudo apt-get install -y scribus
   #- sudo apt-get install -y build-essential devscripts ubuntu-dev-tools debhelper dh-make diffutils patch cdbs
   #- sudo apt-get install -y dh-python python-all python-setuptools python3-all python3-setuptools
   #- sudo apt-get install -y python-cairo python-lxml python-rsvg python-twitter
   
 install: true
 
-script: true
+script:
+   - python -V
  
 #script:
 #   - sonar-scanner
