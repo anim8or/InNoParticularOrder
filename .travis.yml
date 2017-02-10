@@ -3,11 +3,13 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update 
 - sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+- sudo apt-get install -y xvfb
 - sudo apt-get install -y scribus
 script:
 - mkdir _build
 - ls
-- scribus -g -py scripts/to-pdf.py inNoParticularOrder.sla
+- xvfb-run scribus --no-gui --no-splash -py scripts/to-pdf.py inNoParticularOrder.sla
+#- scribus -g -py scripts/to-pdf.py inNoParticularOrder.sla
 - ls 
 #- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build tex/your_file_1.tex
 #- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build tex/your_file_2.tex
