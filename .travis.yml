@@ -8,6 +8,7 @@ before_install:
 script:
 - mkdir _build
 - ls
+- xvfb-run scribus -v
 - xvfb-run scribus --no-gui --no-splash -py scripts/to-pdf.py inNoParticularOrder.sla
 #- scribus -g -py scripts/to-pdf.py inNoParticularOrder.sla
 - ls 
