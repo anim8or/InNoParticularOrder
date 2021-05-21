@@ -44,5 +44,5 @@ jobs:
           mkdir _build
           ls
           xvfb-run scribus-ng -v
-          xvfb-run scribus-ng --no-gui --no-splash -py scripts/to-pdf.py inNoParticularOrder.sla
+          xvfb-run scribus-ng --no-gui --no-splash -py scripts/to-pdf.py -- inNoParticularOrder.sla
           ls
